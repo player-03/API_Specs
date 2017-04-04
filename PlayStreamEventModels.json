@@ -702,6 +702,7 @@
           "className": "PlayerDisplayNameFilteredEventData",
           "classNameSpace": "PlayFab.PlayStreamEvent.Models",
           "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a display name is filtered by community sift only if there is an associated player EntityId for the event.",
           "properties": [
             {
               "name": "DisplayName",
