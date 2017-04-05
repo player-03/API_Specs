@@ -9508,6 +9508,17 @@
         }
       ]
     },
+    "ReportAdActivityResult": {
+      "name": "ReportAdActivityResult",
+      "className": "ReportAdActivityResult",
+      "classNameSpace": "PlayFab.Client.Models",
+      "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "description": "Report ad activity response has no body",
+      "properties": []
+    },
     "ReportPlayerClientRequest": {
       "name": "ReportPlayerClientRequest",
       "className": "ReportPlayerClientRequest",
@@ -9644,9 +9655,9 @@
         }
       ]
     },
-    "RewardAdActivityResponse": {
-      "name": "RewardAdActivityResponse",
-      "className": "RewardAdActivityResponse",
+    "RewardAdActivityResult": {
+      "name": "RewardAdActivityResult",
+      "className": "RewardAdActivityResult",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
       "AnyInclusiveFlags": [
@@ -15729,7 +15740,7 @@
       "method": "POST",
       "request": "ReportAdActivityRequest",
       "requestExample": "",
-      "result": "ReportAdActivityRequest",
+      "result": "ReportAdActivityResult",
       "resultExample": "",
       "AllInclusiveFlags": [
         "Beta"
@@ -15750,7 +15761,7 @@
       "method": "POST",
       "request": "RewardAdActivityRequest",
       "requestExample": "",
-      "result": "RewardAdActivityResponse",
+      "result": "RewardAdActivityResult",
       "resultExample": "",
       "AllInclusiveFlags": [
         "Beta"
