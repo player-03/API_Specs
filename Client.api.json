@@ -7522,7 +7522,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Android device.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -7573,7 +7573,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Custom ID.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -7661,7 +7661,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Facebook account.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -7712,7 +7712,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Game Center id.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -7778,7 +7778,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Google account.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -7857,7 +7857,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this iOS device.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -7915,7 +7915,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Kongregate account.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -8020,7 +8020,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this PSN account.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -8071,7 +8071,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Steam account.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -8122,7 +8122,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Twitch account.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -8213,7 +8213,7 @@
         },
         {
           "name": "CreateAccount",
-          "description": "Automatically create a PlayFab account if one is not currently linked to this Xbox Live account.",
+          "description": "Automatically create a PlayFab account if one is not currently linked to this ID.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
