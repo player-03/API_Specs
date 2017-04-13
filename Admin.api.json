@@ -11706,6 +11706,10 @@
     "PrizeTableHasNoRanks": {
       "id": 1297,
       "name": "PrizeTableHasNoRanks"
+    },
+    "ProfileDoesNotExist": {
+      "id": 1298,
+      "name": "ProfileDoesNotExist"
     }
   },
   "errorList": [
@@ -11995,6 +11999,7 @@
     "PlayerSecretAlreadyConfigured",
     "APIRequestsDisabledForTitle",
     "InvalidSharedSecretKey",
-    "PrizeTableHasNoRanks"
+    "PrizeTableHasNoRanks",
+    "ProfileDoesNotExist"
   ]
 }

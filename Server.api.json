@@ -3929,6 +3929,51 @@
         }
       ]
     },
+    "GetPlayerProfileRequest": {
+      "name": "GetPlayerProfileRequest",
+      "className": "GetPlayerProfileRequest",
+      "classNameSpace": "PlayFab.Server.Models",
+      "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "properties": [
+        {
+          "name": "PlayFabId",
+          "description": "Unique PlayFab assigned ID of the user on whom the operation will be performed.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": false
+        },
+        {
+          "name": "ProfileConstraints",
+          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. On client, only ShowDisplayName, ShowStatistics, ShowAvatarUrl are allowed.",
+          "jsontype": "Object",
+          "actualtype": "PlayerProfileViewConstraints",
+          "isclass": true,
+          "optional": true
+        }
+      ]
+    },
+    "GetPlayerProfileResult": {
+      "name": "GetPlayerProfileResult",
+      "className": "GetPlayerProfileResult",
+      "classNameSpace": "PlayFab.Server.Models",
+      "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "properties": [
+        {
+          "name": "PlayerProfile",
+          "description": "The profile of the user",
+          "jsontype": "Object",
+          "actualtype": "PlayerProfileModel",
+          "isclass": true,
+          "optional": true
+        }
+      ]
+    },
     "GetPlayerSegmentsResult": {
       "name": "GetPlayerSegmentsResult",
       "className": "GetPlayerSegmentsResult",
@@ -9324,6 +9369,28 @@
       ]
     },
     {
+      "name": "GetPlayerProfile",
+      "summary": "Retrieves the player's profile",
+      "requestDetails": "This API allows for access to details regarding a user in the PlayFab service, usually for purposes of customer support. Note that data returned may be Personally Identifying Information (PII), such as email address, and so care should be taken in how this data is stored and managed. Since this call will always return the relevant information for users who have accessed the title, the recommendation is to not store this data locally.",
+      "subgroup": "Account Management",
+      "titleTiers": null,
+      "url": "/Server/GetPlayerProfile",
+      "auth": "SecretKey",
+      "method": "POST",
+      "request": "GetPlayerProfileRequest",
+      "requestExample": "{\r\n  \"PlayFabId\": \"621EF20237534A44\"\r\n}",
+      "result": "GetPlayerProfileResult",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayerProfile\": {\r\n      \"TitleId\": \"TitleName\",\r\n      \"PlayerId\": \"10931252888739651331\",\r\n      \"Created\": \"0001-01-01T00:00:00Z\",\r\n      \"LastLogin\": \"0001-01-01T00:00:00Z\",\r\n      \"BannedUntil\": \"9999-12-31T23:59:59.999Z\",\r\n      \"DisplayName\": \"PlayerDisplayName\",\r\n      \"TotalValueToDateInUSD\": 0\r\n    }\r\n  }\r\n}",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
+      "errors": [
+        "PlayerNotInGame",
+        "ProfileDoesNotExist",
+        "InvalidParams"
+      ]
+    },
+    {
       "name": "GetPlayFabIDsFromFacebookIDs",
       "summary": "Retrieves the unique PlayFab identifiers for the given set of Facebook identifiers.",
       "resultDetails": "For Facebook identifiers which have not been linked to PlayFab accounts, null will be returned.",
@@ -9371,7 +9438,7 @@
       "request": "GetUserAccountInfoRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"10931252888739651331\"\r\n}",
       "result": "GetUserAccountInfoResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"UserInfo\": {\r\n      \"PlayFabId\": \"10931252888739651331\",\r\n      \"Created\": \"0001-01-01T00:00:00Z\",\r\n      \"Username\": \"accountname\",\r\n      \"FacebookInfo\": {\r\n        \"FacebookId\": \"1236849390256\",\r\n        \"FullName\": \"Jane Doe\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"UserInfo\": {\r\n      \"PlayFabId\": \"621EF20237534A44\",\r\n      \"Created\": \"0001-01-01T00:00:00Z\",\r\n      \"Username\": \"accountname\",\r\n      \"FacebookInfo\": {\r\n        \"FacebookId\": \"1236849390256\",\r\n        \"FullName\": \"Jane Doe\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserInventory"
       ],
@@ -11908,6 +11975,7 @@
       "name": "Account Management",
       "methods": [
         "BanUsers",
+        "GetPlayerProfile",
         "GetPlayFabIDsFromFacebookIDs",
         "GetPlayFabIDsFromSteamIDs",
         "GetUserAccountInfo",
@@ -13250,6 +13318,10 @@
     "PrizeTableHasNoRanks": {
       "id": 1297,
       "name": "PrizeTableHasNoRanks"
+    },
+    "ProfileDoesNotExist": {
+      "id": 1298,
+      "name": "ProfileDoesNotExist"
     }
   },
   "errorList": [
@@ -13539,6 +13611,7 @@
     "PlayerSecretAlreadyConfigured",
     "APIRequestsDisabledForTitle",
     "InvalidSharedSecretKey",
-    "PrizeTableHasNoRanks"
+    "PrizeTableHasNoRanks",
+    "ProfileDoesNotExist"
   ]
 }
