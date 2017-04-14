@@ -7393,9 +7393,6 @@
       "className": "SetPlayerSecretRequest",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
       "properties": [
         {
           "name": "PlayerSecret",
@@ -7418,9 +7415,6 @@
       "className": "SetPlayerSecretResult",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
       "properties": []
     },
     "SetPublisherDataRequest": {
@@ -9331,15 +9325,12 @@
       "subgroup": "Authentication",
       "titleTiers": null,
       "url": "/Server/SetPlayerSecret",
-      "auth": "SessionTicket",
+      "auth": "SecretKey",
       "method": "POST",
       "request": "SetPlayerSecretRequest",
       "requestExample": "{\r\n  \"PlayerSecret\": \"secretkeyforthisplayer\",\r\n  \"PlayFabId\": \"ABCD1234\"\r\n}",
       "result": "SetPlayerSecretResult",
       "resultExample": "",
-      "AllInclusiveFlags": [
-        "Beta"
-      ],
       "errors": [
         "InvalidParams",
         "PlayerSecretAlreadyConfigured"

@@ -5799,9 +5799,6 @@
       "className": "GetTitlePublicKeyRequest",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
       "properties": [
         {
           "name": "TitleId",
@@ -5824,9 +5821,6 @@
       "className": "GetTitlePublicKeyResult",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
       "properties": [
         {
           "name": "RSAPublicKey",
@@ -10099,9 +10093,6 @@
       "className": "SetPlayerSecretRequest",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
       "properties": [
         {
           "name": "PlayerSecret",
@@ -10124,9 +10115,6 @@
       "className": "SetPlayerSecretResult",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
       "properties": []
     },
     "SharedGroupDataRecord": {
@@ -12649,9 +12637,6 @@
       "requestExample": "{\r\n  \"TitleId\": \"ID\",\r\n  \"TitleSharedSecret\": \"123456789\"\r\n}",
       "result": "GetTitlePublicKeyResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"RSAPublicKey\": \"dGVzdCBrZXkgaGVyZQ==\"\r\n  }\r\n}",
-      "AllInclusiveFlags": [
-        "Beta"
-      ],
       "errors": [
         "InvalidParams",
         "NoSharedSecretKeyConfigured"
@@ -13100,12 +13085,9 @@
       "auth": "SessionTicket",
       "method": "POST",
       "request": "SetPlayerSecretRequest",
-      "requestExample": "",
+      "requestExample": "{\r\n  \"PlayerSecret\": \"A cryptographically strong string\"\r\n}",
       "result": "SetPlayerSecretResult",
-      "resultExample": "",
-      "AllInclusiveFlags": [
-        "Beta"
-      ],
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "errors": [
         "InvalidParams",
         "PlayerSecretAlreadyConfigured"
