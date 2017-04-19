@@ -9789,6 +9789,13 @@
           "jsontype": "String",
           "actualtype": "String",
           "optional": false
+        },
+        {
+          "name": "Password",
+          "description": "The iTunes shared secret (a hexadecimal string). Only used for receipts that contain auto-renewable subscriptions",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
         }
       ]
     },
@@ -12335,6 +12342,13 @@
           "jsontype": "Number",
           "actualtype": "int32",
           "optional": false
+        },
+        {
+          "name": "Password",
+          "description": "The iTunes shared secret (a hexadecimal  string). Only used for receipts that contain auto-renewable subscriptions",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
         }
       ]
     },
@@ -14966,7 +14980,7 @@
       "auth": "SessionTicket",
       "method": "POST",
       "request": "RestoreIOSPurchasesRequest",
-      "requestExample": "{\r\n  \"ReceiptData\": \"F00000000000000000000\"\r\n}",
+      "requestExample": "{\r\n  \"ReceiptData\": \"F00000000000000000000\",\r\n  \"Password\": \"5d02a0dc14389a3483becdc67bfa1722\"\r\n}",
       "result": "RestoreIOSPurchasesResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "errors": [
