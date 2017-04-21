@@ -586,6 +586,13 @@
               "optional": true
             },
             {
+              "name": "StoreId",
+              "description": "The StoreId where the item was purchased.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
               "name": "CurrencyCode",
               "description": "Currency that was used to purchase the item.",
               "jsontype": "String",
@@ -2389,6 +2396,13 @@
             {
               "name": "CatalogVersion",
               "description": "Version of the catalog from which the item was purchased.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "StoreId",
+              "description": "The StoreId where the item was purchased.",
               "jsontype": "String",
               "actualtype": "String",
               "optional": true
