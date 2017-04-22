@@ -11301,7 +11301,7 @@
         },
         {
           "name": "Data",
-          "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character.",
+          "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
           "collection": "map",
           "jsontype": "String",
           "actualtype": "String",
@@ -11388,7 +11388,7 @@
         },
         {
           "name": "Data",
-          "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character.",
+          "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
           "collection": "map",
           "jsontype": "String",
           "actualtype": "String",
@@ -11506,7 +11506,7 @@
         },
         {
           "name": "Data",
-          "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character.",
+          "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
           "collection": "map",
           "jsontype": "String",
           "actualtype": "String",
@@ -11545,7 +11545,7 @@
       "properties": [
         {
           "name": "Data",
-          "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character.",
+          "description": "Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may not begin with a '!' character or be null.",
           "collection": "map",
           "jsontype": "String",
           "actualtype": "String",
