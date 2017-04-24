@@ -17921,6 +17921,10 @@
     "ContentS3OriginBucketNotConfigured": {
       "id": 1299,
       "name": "ContentS3OriginBucketNotConfigured"
+    },
+    "InvalidEnvironmentForReceipt": {
+      "id": 1300,
+      "name": "InvalidEnvironmentForReceipt"
     }
   },
   "errorList": [
@@ -18212,6 +18216,7 @@
     "InvalidSharedSecretKey",
     "PrizeTableHasNoRanks",
     "ProfileDoesNotExist",
-    "ContentS3OriginBucketNotConfigured"
+    "ContentS3OriginBucketNotConfigured",
+    "InvalidEnvironmentForReceipt"
   ]
 }
