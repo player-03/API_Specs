@@ -1952,6 +1952,9 @@
       "className": "CreatePlayerSharedSecretRequest",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "FriendlyName",
@@ -1967,6 +1970,9 @@
       "className": "CreatePlayerSharedSecretResult",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "SecretKey",
@@ -2554,6 +2560,9 @@
       "className": "DeletePlayerSharedSecretRequest",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "SecretKey",
@@ -2569,6 +2578,9 @@
       "className": "DeletePlayerSharedSecretResult",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": []
     },
     "DeleteStoreRequest": {
@@ -3370,6 +3382,9 @@
       "className": "GetPlayerSharedSecretsRequest",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": []
     },
     "GetPlayerSharedSecretsResult": {
@@ -3377,6 +3392,9 @@
       "className": "GetPlayerSharedSecretsResult",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "SharedSecrets",
@@ -6200,10 +6218,13 @@
       "className": "SetPlayerSecretRequest",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": false
@@ -6222,6 +6243,9 @@
       "className": "SetPlayerSecretResult",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": []
     },
     "SetPublishedRevisionRequest": {
@@ -6418,6 +6442,9 @@
       "className": "SharedSecret",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "SecretKey",
@@ -7017,6 +7044,9 @@
       "className": "UpdatePlayerSharedSecretRequest",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "SecretKey",
@@ -7046,6 +7076,9 @@
       "className": "UpdatePlayerSharedSecretResult",
       "classNameSpace": "PlayFab.Admin.Models",
       "assembly": "PlayFab.Admin.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": []
     },
     "UpdatePlayerStatisticDefinitionRequest": {
@@ -8076,6 +8109,9 @@
       "requestExample": "{\r\n  \"FriendlyName\": \"iOS Users\"\r\n}",
       "result": "CreatePlayerSharedSecretResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"SecretKey\": \"keysaresecret\"\r\n  }\r\n}",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
       "seeAlso": [
         "Admin/UpdatePlayerSharedSecret",
         "Admin/GetPlayerSharedSecrets"
@@ -8097,6 +8133,9 @@
       "requestExample": "{\r\n  \"SecretKey\": \"keysaresecret\"\r\n}",
       "result": "DeletePlayerSharedSecretResult",
       "resultExample": "",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
       "seeAlso": [
         "Admin/CreatePlayerSharedSecret",
         "Admin/GetPlayerSharedSecrets",
@@ -8120,6 +8159,9 @@
       "requestExample": "{}",
       "result": "GetPlayerSharedSecretsResult",
       "resultExample": "",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
       "seeAlso": [
         "Admin/CreatePlayerSharedSecret",
         "Admin/UpdatePlayerSharedSecret"
@@ -8161,6 +8203,9 @@
       "requestExample": "{\r\n  \"PlayerSecret\": \"secretkeyforthisplayer\",\r\n  \"PlayFabId\": \"ABCD1234\"\r\n}",
       "result": "SetPlayerSecretResult",
       "resultExample": "",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
       "errors": [
         "InvalidParams"
       ]
@@ -8178,6 +8223,9 @@
       "requestExample": "{\r\n  \"SecretKey\": \"keysaresecret\",\r\n  \"FriendlyName\": \"XBox Users\",\r\n  \"Disabled\": false\r\n}",
       "result": "UpdatePlayerSharedSecretResult",
       "resultExample": "",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
       "seeAlso": [
         "Admin/CreatePlayerSharedSecret",
         "Admin/GetPlayerSharedSecrets"

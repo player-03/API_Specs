@@ -7393,10 +7393,13 @@
       "className": "SetPlayerSecretRequest",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": false
@@ -7415,6 +7418,9 @@
       "className": "SetPlayerSecretResult",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": []
     },
     "SetPublisherDataRequest": {
@@ -9331,6 +9337,9 @@
       "requestExample": "{\r\n  \"PlayerSecret\": \"secretkeyforthisplayer\",\r\n  \"PlayFabId\": \"ABCD1234\"\r\n}",
       "result": "SetPlayerSecretResult",
       "resultExample": "",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
       "errors": [
         "InvalidParams",
         "PlayerSecretAlreadyConfigured"

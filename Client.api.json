@@ -5799,6 +5799,9 @@
       "className": "GetTitlePublicKeyRequest",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "TitleId",
@@ -5821,6 +5824,9 @@
       "className": "GetTitlePublicKeyResult",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "RSAPublicKey",
@@ -7530,14 +7536,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -7581,14 +7587,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -7669,14 +7675,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -7720,14 +7726,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -7800,14 +7806,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -7865,14 +7871,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -7931,14 +7937,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -8028,14 +8034,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -8079,14 +8085,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -8130,14 +8136,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -8221,14 +8227,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -9417,14 +9423,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -9512,14 +9518,14 @@
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -10093,17 +10099,20 @@
       "className": "SetPlayerSecretRequest",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "PlayerSecret",
-          "description": "Player secret that is used to verify API request signatures",
+          "description": "Player secret that is used to verify API request signatures (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "EncryptedRequest",
-          "description": "Base64 encoded body that is encrypted with the Title's public RSA key",
+          "description": "Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -10115,6 +10124,9 @@
       "className": "SetPlayerSecretResult",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": []
     },
     "SharedGroupDataRecord": {
@@ -12637,6 +12649,9 @@
       "requestExample": "{\r\n  \"TitleId\": \"ID\",\r\n  \"TitleSharedSecret\": \"123456789\"\r\n}",
       "result": "GetTitlePublicKeyResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"RSAPublicKey\": \"dGVzdCBrZXkgaGVyZQ==\"\r\n  }\r\n}",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
       "errors": [
         "InvalidParams",
         "NoSharedSecretKeyConfigured"
@@ -13088,6 +13103,9 @@
       "requestExample": "{\r\n  \"PlayerSecret\": \"A cryptographically strong string\"\r\n}",
       "result": "SetPlayerSecretResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
       "errors": [
         "InvalidParams",
         "PlayerSecretAlreadyConfigured"
