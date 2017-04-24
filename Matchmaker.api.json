@@ -1871,6 +1871,10 @@
     "ProfileDoesNotExist": {
       "id": 1298,
       "name": "ProfileDoesNotExist"
+    },
+    "ContentS3OriginBucketNotConfigured": {
+      "id": 1299,
+      "name": "ContentS3OriginBucketNotConfigured"
     }
   },
   "errorList": [
@@ -2161,6 +2165,7 @@
     "APIRequestsDisabledForTitle",
     "InvalidSharedSecretKey",
     "PrizeTableHasNoRanks",
-    "ProfileDoesNotExist"
+    "ProfileDoesNotExist",
+    "ContentS3OriginBucketNotConfigured"
   ]
 }

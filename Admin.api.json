@@ -9821,7 +9821,8 @@
         "Admin/GetContentList"
       ],
       "errors": [
-        "InvalidParams"
+        "InvalidParams",
+        "InvalidRequest"
       ]
     },
     {
@@ -9843,7 +9844,8 @@
         "Admin/DeleteContent"
       ],
       "errors": [
-        "InvalidParams"
+        "InvalidParams",
+        "ContentS3OriginBucketNotConfigured"
       ]
     },
     {
@@ -9867,7 +9869,8 @@
       "errors": [
         "InvalidParams",
         "ContentQuotaExceeded",
-        "BillingInformationRequired"
+        "BillingInformationRequired",
+        "InvalidRequest"
       ]
     },
     {
@@ -11662,6 +11665,10 @@
     "ProfileDoesNotExist": {
       "id": 1298,
       "name": "ProfileDoesNotExist"
+    },
+    "ContentS3OriginBucketNotConfigured": {
+      "id": 1299,
+      "name": "ContentS3OriginBucketNotConfigured"
     }
   },
   "errorList": [
@@ -11952,6 +11959,7 @@
     "APIRequestsDisabledForTitle",
     "InvalidSharedSecretKey",
     "PrizeTableHasNoRanks",
-    "ProfileDoesNotExist"
+    "ProfileDoesNotExist",
+    "ContentS3OriginBucketNotConfigured"
   ]
 }

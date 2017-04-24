@@ -15460,6 +15460,10 @@
         "Admin/GetContentUploadUrl",
         "Admin/DeleteContent",
         "Admin/GetContentList"
+      ],
+      "errors": [
+        "InvalidParams",
+        "ContentS3OriginBucketNotConfigured"
       ]
     },
     {
@@ -17913,6 +17917,10 @@
     "ProfileDoesNotExist": {
       "id": 1298,
       "name": "ProfileDoesNotExist"
+    },
+    "ContentS3OriginBucketNotConfigured": {
+      "id": 1299,
+      "name": "ContentS3OriginBucketNotConfigured"
     }
   },
   "errorList": [
@@ -18203,6 +18211,7 @@
     "APIRequestsDisabledForTitle",
     "InvalidSharedSecretKey",
     "PrizeTableHasNoRanks",
-    "ProfileDoesNotExist"
+    "ProfileDoesNotExist",
+    "ContentS3OriginBucketNotConfigured"
   ]
 }
