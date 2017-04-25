@@ -14672,7 +14672,7 @@
     },
     {
       "name": "GetPurchase",
-      "summary": "Retrieves a purchase along with its current PlayFab status.",
+      "summary": "Retrieves a purchase along with its current PlayFab status. Returns inventory items from the purchase that are still active.",
       "subgroup": "Player Item Management",
       "titleTiers": null,
       "url": "/Client/GetPurchase",
@@ -15346,7 +15346,7 @@
       "request": "ConsumePSNEntitlementsRequest",
       "requestExample": "{\r\n  \"ServiceLabel\": 1\r\n}",
       "result": "ConsumePSNEntitlementsResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"ItemsGranted\": [\r\n      {\r\n        \"ItemId\": \"shield_level_5\",\r\n        \"ItemInstanceId\": \"133713371337\",\r\n        \"ItemClass\": \"shields\",\r\n        \"PurchaseDate\": \"2014-03-07T00:00:00Z\",\r\n        \"Expiration\": \"2015-10-01T00:00:00Z\",\r\n        \"RemainingUses\": 10,\r\n        \"Annotation\": \"No Annotation\",\r\n        \"CatalogVersion\": \"5\",\r\n        \"BundleParent\": \"crate block 1\",\r\n        \"UnitPrice\": 0\r\n      }\r\n    ]\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"ItemsGranted\": [\r\n      {\r\n        \"ItemId\": \"shield_level_5\",\r\n        \"ItemInstanceId\": \"133713371337\",\r\n        \"ItemClass\": \"shields\",\r\n        \"PurchaseDate\": \"2017-03-07T00:00:00Z\",\r\n        \"Expiration\": \"2018-10-01T00:00:00Z\",\r\n        \"RemainingUses\": 10,\r\n        \"Annotation\": \"No Annotation\",\r\n        \"CatalogVersion\": \"5\",\r\n        \"BundleParent\": \"crate block 1\",\r\n        \"UnitPrice\": 0\r\n      }\r\n    ]\r\n  }\r\n}",
       "AllInclusiveFlags": [
         "Playstation"
       ],
