@@ -17943,6 +17943,14 @@
     "InvalidEnvironmentForReceipt": {
       "id": 1300,
       "name": "InvalidEnvironmentForReceipt"
+    },
+    "EncryptedRequestNotAllowed": {
+      "id": 1301,
+      "name": "EncryptedRequestNotAllowed"
+    },
+    "SignedRequestNotAllowed": {
+      "id": 1302,
+      "name": "SignedRequestNotAllowed"
     }
   },
   "errorList": [
@@ -18235,6 +18243,8 @@
     "PrizeTableHasNoRanks",
     "ProfileDoesNotExist",
     "ContentS3OriginBucketNotConfigured",
-    "InvalidEnvironmentForReceipt"
+    "InvalidEnvironmentForReceipt",
+    "EncryptedRequestNotAllowed",
+    "SignedRequestNotAllowed"
   ]
 }
