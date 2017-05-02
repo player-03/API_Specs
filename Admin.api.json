@@ -9852,7 +9852,7 @@
     },
     {
       "name": "DeleteContent",
-      "summary": "Delete a content file from the title",
+      "summary": "Delete a content file from the title. When deleting a file that does not exist, it returns success.",
       "subgroup": "Content",
       "titleTiers": null,
       "url": "/Admin/DeleteContent",
@@ -9869,8 +9869,7 @@
         "Admin/GetContentList"
       ],
       "errors": [
-        "InvalidParams",
-        "InvalidRequest"
+        "InvalidParams"
       ]
     },
     {
@@ -9917,8 +9916,7 @@
       "errors": [
         "InvalidParams",
         "ContentQuotaExceeded",
-        "BillingInformationRequired",
-        "InvalidRequest"
+        "BillingInformationRequired"
       ]
     },
     {
