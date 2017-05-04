@@ -562,8 +562,6 @@
         "ObsoleteAfter": "11/19/2016",
         "ReplacedBy": "Server/DeregisterGame"
       },
-      "deprecated": true,
-      "deprecatedBy": "Server/DeregisterGame",
       "subgroup": "Matchmaking APIs",
       "titleTiers": null,
       "url": "/Matchmaker/DeregisterGame",
@@ -636,8 +634,6 @@
         "ObsoleteAfter": "11/19/2016",
         "ReplacedBy": "Server/DeregisterGame"
       },
-      "deprecated": true,
-      "deprecatedBy": "Server/DeregisterGame",
       "subgroup": "Matchmaking APIs",
       "titleTiers": null,
       "url": "/Matchmaker/RegisterGame",

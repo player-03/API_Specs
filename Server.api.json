@@ -4269,8 +4269,6 @@
             "ObsoleteAfter": "10/10/2016",
             "ReplacedBy": "SteamStringIDs"
           },
-          "deprecated": true,
-          "deprecatedBy": "SteamStringIDs",
           "jsontype": "Number",
           "actualtype": "uint64",
           "optional": true
@@ -7656,8 +7654,6 @@
             "ObsoleteAfter": "10/10/2016",
             "ReplacedBy": "SteamStringId"
           },
-          "deprecated": true,
-          "deprecatedBy": "SteamStringId",
           "jsontype": "Number",
           "actualtype": "uint64",
           "optional": false
@@ -9894,8 +9890,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "GetPlayerStatistics"
       },
-      "deprecated": true,
-      "deprecatedBy": "GetPlayerStatistics",
       "subgroup": "Player Data Management",
       "titleTiers": null,
       "url": "/Server/GetUserStatistics",
@@ -10104,8 +10098,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "UpdatePlayerStatistics"
       },
-      "deprecated": true,
-      "deprecatedBy": "UpdatePlayerStatistics",
       "subgroup": "Player Data Management",
       "titleTiers": null,
       "url": "/Server/UpdateUserStatistics",
@@ -11026,8 +11018,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "WritePlayerEvent"
       },
-      "deprecated": true,
-      "deprecatedBy": "WritePlayerEvent",
       "subgroup": "Analytics",
       "titleTiers": null,
       "url": "/Server/LogEvent",

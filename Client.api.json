@@ -510,8 +510,6 @@
             "ObsoleteAfter": "2017-2-15",
             "ReplacedBy": "Adid"
           },
-          "deprecated": true,
-          "deprecatedBy": "Adid",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -5441,8 +5439,6 @@
             "ObsoleteAfter": "10/10/2016",
             "ReplacedBy": "SteamStringIDs"
           },
-          "deprecated": true,
-          "deprecatedBy": "SteamStringIDs",
           "jsontype": "Number",
           "actualtype": "uint64",
           "optional": true
@@ -5605,7 +5601,6 @@
             "ObsoleteAfter": "5/15/2017",
             "ReplacedBy": ""
           },
-          "deprecated": true,
           "jsontype": "Object",
           "actualtype": "ItemInstance",
           "isclass": true,
@@ -6924,8 +6919,6 @@
             "ObsoleteAfter": "3/22/2017",
             "ReplacedBy": "ServerAuthCode"
           },
-          "deprecated": true,
-          "deprecatedBy": "ServerAuthCode",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -7829,8 +7822,6 @@
             "ObsoleteAfter": "3/22/2017",
             "ReplacedBy": "ServerAuthCode"
           },
-          "deprecated": true,
-          "deprecatedBy": "ServerAuthCode",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -7851,7 +7842,6 @@
             "ObsoleteAfter": "10/10/2016",
             "ReplacedBy": null
           },
-          "deprecated": true,
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -8409,7 +8399,6 @@
             "ObsoleteAfter": "10/10/2016",
             "ReplacedBy": null
           },
-          "deprecated": true,
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
@@ -9468,7 +9457,6 @@
             "ObsoleteAfter": "10/10/2016",
             "ReplacedBy": null
           },
-          "deprecated": true,
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -10109,7 +10097,6 @@
             "ObsoleteAfter": "10/10/2016",
             "ReplacedBy": null
           },
-          "deprecated": true,
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -10596,8 +10583,6 @@
             "ObsoleteAfter": "10/10/2016",
             "ReplacedBy": "SteamStringId"
           },
-          "deprecated": true,
-          "deprecatedBy": "SteamStringId",
           "jsontype": "Number",
           "actualtype": "uint64",
           "optional": false
@@ -13475,8 +13460,6 @@
         "ObsoleteAfter": "12/10/2016",
         "ReplacedBy": "GetPlayerCombinedInfo"
       },
-      "deprecated": true,
-      "deprecatedBy": "GetPlayerCombinedInfo",
       "subgroup": "Account Management",
       "titleTiers": null,
       "url": "/Client/GetUserCombinedInfo",
@@ -14169,8 +14152,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "GetFriendLeaderboardAroundPlayer"
       },
-      "deprecated": true,
-      "deprecatedBy": "GetFriendLeaderboardAroundPlayer",
       "subgroup": "Player Data Management",
       "titleTiers": null,
       "url": "/Client/GetFriendLeaderboardAroundCurrentUser",
@@ -14246,8 +14227,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "GetLeaderboardAroundPlayer"
       },
-      "deprecated": true,
-      "deprecatedBy": "GetLeaderboardAroundPlayer",
       "subgroup": "Player Data Management",
       "titleTiers": null,
       "url": "/Client/GetLeaderboardAroundCurrentUser",
@@ -14431,8 +14410,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "GetPlayerStatistics"
       },
-      "deprecated": true,
-      "deprecatedBy": "GetPlayerStatistics",
       "subgroup": "Player Data Management",
       "titleTiers": null,
       "url": "/Client/GetUserStatistics",
@@ -14534,8 +14511,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "UpdatePlayerStatistics"
       },
-      "deprecated": true,
-      "deprecatedBy": "UpdatePlayerStatistics",
       "subgroup": "Player Data Management",
       "titleTiers": null,
       "url": "/Client/UpdateUserStatistics",
@@ -15254,8 +15229,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "WritePlayerEvent"
       },
-      "deprecated": true,
-      "deprecatedBy": "WritePlayerEvent",
       "subgroup": "Analytics",
       "titleTiers": null,
       "url": "/Client/LogEvent",
@@ -15492,8 +15465,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "ExecuteCloudScript"
       },
-      "deprecated": true,
-      "deprecatedBy": "ExecuteCloudScript",
       "subgroup": "Server-Side Cloud Script",
       "titleTiers": null,
       "url": "/Client/GetCloudScriptUrl",
@@ -15521,8 +15492,6 @@
         "ObsoleteAfter": "10/10/2016",
         "ReplacedBy": "ExecuteCloudScript"
       },
-      "deprecated": true,
-      "deprecatedBy": "ExecuteCloudScript",
       "subgroup": "Server-Side Cloud Script",
       "titleTiers": null,
       "url": "/Client/RunCloudScript",
