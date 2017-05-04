@@ -3428,6 +3428,48 @@
           ]
         },
         {
+          "name": "title_profile_view_constraints_changed",
+          "className": "TitleProfileViewConstraintsChangedEventData",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a profile view constraint is changed for the title.",
+          "properties": [
+            {
+              "name": "ProfileType",
+              "description": "The profile type of the profile view constraints.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "PreviousProfileViewConstraints",
+              "description": "Profile view constraints before the change as a JSON string.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "ProfileViewConstraints",
+              "description": "Profile view constraints after the change as a JSON string.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "UserId",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "DeveloperId",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            }
+          ]
+        },
+        {
           "name": "title_published_cloudscript",
           "className": "TitlePublishedCloudScriptEventData",
           "classNameSpace": "PlayFab.PlayStreamEvent.Models",

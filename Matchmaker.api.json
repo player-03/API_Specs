@@ -1887,6 +1887,10 @@
     "SignedRequestNotAllowed": {
       "id": 1302,
       "name": "SignedRequestNotAllowed"
+    },
+    "RequestViewConstraintParamsNotAllowed": {
+      "id": 1303,
+      "name": "RequestViewConstraintParamsNotAllowed"
     }
   },
   "errorList": [
@@ -2181,6 +2185,7 @@
     "ContentS3OriginBucketNotConfigured",
     "InvalidEnvironmentForReceipt",
     "EncryptedRequestNotAllowed",
-    "SignedRequestNotAllowed"
+    "SignedRequestNotAllowed",
+    "RequestViewConstraintParamsNotAllowed"
   ]
 }

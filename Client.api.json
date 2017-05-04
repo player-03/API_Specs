@@ -78,6 +78,9 @@
       "className": "AdCampaignAttributionModel",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Platform",
@@ -4969,6 +4972,51 @@
         }
       ]
     },
+    "GetPlayerProfileRequest": {
+      "name": "GetPlayerProfileRequest",
+      "className": "GetPlayerProfileRequest",
+      "classNameSpace": "PlayFab.Client.Models",
+      "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "properties": [
+        {
+          "name": "PlayFabId",
+          "description": "Unique PlayFab assigned ID of the user on whom the operation will be performed.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": false
+        },
+        {
+          "name": "ProfileConstraints",
+          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. On client, only ShowDisplayName, ShowStatistics, ShowAvatarUrl are allowed.",
+          "jsontype": "Object",
+          "actualtype": "PlayerProfileViewConstraints",
+          "isclass": true,
+          "optional": true
+        }
+      ]
+    },
+    "GetPlayerProfileResult": {
+      "name": "GetPlayerProfileResult",
+      "className": "GetPlayerProfileResult",
+      "classNameSpace": "PlayFab.Client.Models",
+      "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "properties": [
+        {
+          "name": "PlayerProfile",
+          "description": "The profile of the user",
+          "jsontype": "Object",
+          "actualtype": "PlayerProfileModel",
+          "isclass": true,
+          "optional": true
+        }
+      ]
+    },
     "GetPlayerSegmentsRequest": {
       "name": "GetPlayerSegmentsRequest",
       "className": "GetPlayerSegmentsRequest",
@@ -6753,6 +6801,9 @@
       "className": "LinkedPlatformAccountModel",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Platform",
@@ -7294,6 +7345,9 @@
       "className": "LocationModel",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "ContinentCode",
@@ -9160,6 +9214,9 @@
       "className": "PushNotificationRegistrationModel",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Platform",
@@ -10418,6 +10475,9 @@
       "className": "StatisticModel",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Name",
@@ -10663,6 +10723,9 @@
       "className": "TagModel",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "TagValue",
@@ -12405,6 +12468,9 @@
       "className": "ValueToDateModel",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Currency",
@@ -12434,6 +12500,9 @@
       "className": "VirtualCurrencyBalanceModel",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Currency",
@@ -13239,6 +13308,28 @@
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"4027527BF22653D1\",\r\n    \"InfoResultPayload\": {\r\n      \"AccountInfo\": {\r\n        \"PlayFabId\": \"4027527BF22653D1\",\r\n        \"Created\": \"2013-04-07T09:04:28Z\",\r\n        \"Username\": \"my name\",\r\n        \"TitleInfo\": {\r\n          \"Origination\": \"IOS\",\r\n          \"Created\": \"2014-01-08T11:03:18Z\",\r\n          \"LastLogin\": \"2014-04-07T09:04:28Z\",\r\n          \"FirstLogin\": \"2014-01-08T11:03:18Z\"\r\n        },\r\n        \"FacebookInfo\": {\r\n          \"FacebookId\": \"23525445454\"\r\n        },\r\n        \"SteamInfo\": {\r\n          \"SteamCountry\": \"US\",\r\n          \"SteamCurrency\": \"USD\"\r\n        },\r\n        \"GameCenterInfo\": {\r\n          \"GameCenterId\": \"someone\"\r\n        }\r\n      },\r\n      \"UserVirtualCurrency\": {\r\n        \"GC\": 15\r\n      },\r\n      \"UserVirtualCurrencyRechargeTimes\": {\r\n        \"GC\": {\r\n          \"SecondsToRecharge\": 3600,\r\n          \"RechargeTime\": \"2014-01-01T12:00:00Z\",\r\n          \"RechargeMax\": 50\r\n        }\r\n      },\r\n      \"UserData\": {\r\n        \"preferences\": {\r\n          \"Value\": \"alpha\",\r\n          \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n          \"Permission\": \"Public\"\r\n        },\r\n        \"progress\": {\r\n          \"Value\": \"level_twenty\",\r\n          \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n          \"Permission\": \"Private\"\r\n        }\r\n      },\r\n      \"UserDataVersion\": 12,\r\n      \"UserReadOnlyDataVersion\": 0\r\n    }\r\n  }\r\n}",
       "errors": [
         "AccountNotFound"
+      ]
+    },
+    {
+      "name": "GetPlayerProfile",
+      "summary": "Retrieves the player's profile",
+      "requestDetails": "This API allows for access to details regarding a user in the PlayFab service, usually for purposes of customer support. Note that data returned may be Personally Identifying Information (PII), such as email address, and so care should be taken in how this data is stored and managed. Since this call will always return the relevant information for users who have accessed the title, the recommendation is to not store this data locally.",
+      "subgroup": "Account Management",
+      "titleTiers": null,
+      "url": "/Client/GetPlayerProfile",
+      "auth": "SessionTicket",
+      "method": "POST",
+      "request": "GetPlayerProfileRequest",
+      "requestExample": "{\r\n  \"PlayFabId\": \"621EF20237534A44\"\r\n}",
+      "result": "GetPlayerProfileResult",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayerProfile\": {\r\n      \"TitleId\": \"TitleName\",\r\n      \"PlayerId\": \"10931252888739651331\",\r\n      \"Created\": \"0001-01-01T00:00:00Z\",\r\n      \"LastLogin\": \"0001-01-01T00:00:00Z\",\r\n      \"BannedUntil\": \"9999-12-31T23:59:59.999Z\",\r\n      \"DisplayName\": \"PlayerDisplayName\",\r\n      \"TotalValueToDateInUSD\": 0\r\n    }\r\n  }\r\n}",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
+      "errors": [
+        "PlayerNotInGame",
+        "ProfileDoesNotExist",
+        "RequestViewConstraintParamsNotAllowed"
       ]
     },
     {
@@ -16534,6 +16625,7 @@
         "ConsumeXboxEntitlements",
         "GetAccountInfo",
         "GetPlayerCombinedInfo",
+        "GetPlayerProfile",
         "GetPlayFabIDsFromFacebookIDs",
         "GetPlayFabIDsFromGameCenterIDs",
         "GetPlayFabIDsFromGenericIDs",
@@ -17951,6 +18043,10 @@
     "SignedRequestNotAllowed": {
       "id": 1302,
       "name": "SignedRequestNotAllowed"
+    },
+    "RequestViewConstraintParamsNotAllowed": {
+      "id": 1303,
+      "name": "RequestViewConstraintParamsNotAllowed"
     }
   },
   "errorList": [
@@ -18245,6 +18341,7 @@
     "ContentS3OriginBucketNotConfigured",
     "InvalidEnvironmentForReceipt",
     "EncryptedRequestNotAllowed",
-    "SignedRequestNotAllowed"
+    "SignedRequestNotAllowed",
+    "RequestViewConstraintParamsNotAllowed"
   ]
 }

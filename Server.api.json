@@ -131,6 +131,9 @@
       "className": "AdCampaignAttributionModel",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Platform",
@@ -5334,6 +5337,9 @@
       "className": "LinkedPlatformAccountModel",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Platform",
@@ -5403,6 +5409,9 @@
       "className": "LocationModel",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "ContinentCode",
@@ -6603,6 +6612,9 @@
       "className": "PushNotificationRegistrationModel",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Platform",
@@ -7523,6 +7535,9 @@
       "className": "StatisticModel",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Name",
@@ -7766,6 +7781,9 @@
       "className": "TagModel",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "TagValue",
@@ -9103,6 +9121,9 @@
       "className": "ValueToDateModel",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Currency",
@@ -9132,6 +9153,9 @@
       "className": "VirtualCurrencyBalanceModel",
       "classNameSpace": "PlayFab.Server.Models",
       "assembly": "PlayFab.Server.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
       "properties": [
         {
           "name": "Currency",
@@ -13338,6 +13362,10 @@
     "SignedRequestNotAllowed": {
       "id": 1302,
       "name": "SignedRequestNotAllowed"
+    },
+    "RequestViewConstraintParamsNotAllowed": {
+      "id": 1303,
+      "name": "RequestViewConstraintParamsNotAllowed"
     }
   },
   "errorList": [
@@ -13632,6 +13660,7 @@
     "ContentS3OriginBucketNotConfigured",
     "InvalidEnvironmentForReceipt",
     "EncryptedRequestNotAllowed",
-    "SignedRequestNotAllowed"
+    "SignedRequestNotAllowed",
+    "RequestViewConstraintParamsNotAllowed"
   ]
 }
