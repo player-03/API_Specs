@@ -2900,12 +2900,26 @@
           "optional": true
         },
         {
+          "name": "FunctionResultTooLarge",
+          "description": "Flag indicating if the FunctionResult was too large and was subsequently dropped from this event",
+          "jsontype": "Boolean",
+          "actualtype": "Boolean",
+          "optional": true
+        },
+        {
           "name": "Logs",
           "description": "Entries logged during the function execution. These include both entries logged in the function code using log.info() and log.error() and error entries for API and HTTP request failures.",
           "collection": "array",
           "jsontype": "Object",
           "actualtype": "LogStatement",
           "isclass": true,
+          "optional": true
+        },
+        {
+          "name": "LogsTooLarge",
+          "description": "Flag indicating if the logs were too large and were subsequently dropped from this event",
+          "jsontype": "Boolean",
+          "actualtype": "Boolean",
           "optional": true
         },
         {
@@ -2943,7 +2957,7 @@
         },
         {
           "name": "Error",
-          "description": "Information about the error, if any, that occured during execution",
+          "description": "Information about the error, if any, that occurred during execution",
           "jsontype": "Object",
           "actualtype": "ScriptExecutionError",
           "isclass": true,
