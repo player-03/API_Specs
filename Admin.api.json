@@ -6105,7 +6105,7 @@
           "description": "Name of the task. This is a unique identifier for tasks in the title.",
           "jsontype": "String",
           "actualtype": "String",
-          "optional": true
+          "optional": false
         },
         {
           "name": "Description",

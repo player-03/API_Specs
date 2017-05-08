@@ -13803,7 +13803,8 @@
       "result": "ReportPlayerClientResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Updated\": true,\r\n    \"SubmissionsRemaining\": 2\r\n  }\r\n}",
       "errors": [
-        "InvalidParams"
+        "InvalidParams",
+        "OverLimit"
       ]
     },
     {

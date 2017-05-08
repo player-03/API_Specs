@@ -6984,7 +6984,7 @@
         },
         {
           "name": "ReporteeId",
-          "description": "PlayFabId of the reported player.",
+          "description": "Unique PlayFab identifier of the reported player.",
           "jsontype": "String",
           "actualtype": "String",
           "optional": false
@@ -7006,7 +7006,13 @@
       "properties": [
         {
           "name": "Updated",
-          "description": "Indicates whether this action completed successfully.",
+          "description": "Deprecated: Always true",
+          "deprecation": {
+            "ProposedAfter": "5/8/2017",
+            "DeprecatedAfter": "7/8/2017",
+            "ObsoleteAfter": "8/8/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": false
@@ -10612,11 +10618,12 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "ReportPlayerServerRequest",
-      "requestExample": "{\r\n  \"ReporterId\": \"9ddafe27d6d445da\",\r\n  \"ReporteeId\": \"1a46086aed40f142\",\r\n  \"TitleId\": \"06dd\",\r\n  \"Comment\": \"cheating\"\r\n}",
+      "requestExample": "{\r\n  \"ReporterId\": \"9ddafe27d6d445da\",\r\n  \"ReporteeId\": \"1a46086aed40f142\",\r\n  \"Comment\": \"cheating\"\r\n}",
       "result": "ReportPlayerServerResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Updated\": true,\r\n    \"SubmissionsRemaining\": 2\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Updated\": false,\r\n    \"SubmissionsRemaining\": 2\r\n  }\r\n}",
       "errors": [
-        "InvalidParams"
+        "InvalidParams",
+        "OverLimit"
       ]
     },
     {
