@@ -13346,6 +13346,10 @@
     "RequestViewConstraintParamsNotAllowed": {
       "id": 1303,
       "name": "RequestViewConstraintParamsNotAllowed"
+    },
+    "BadPartnerConfiguration": {
+      "id": 1304,
+      "name": "BadPartnerConfiguration"
     }
   },
   "errorList": [
@@ -13641,6 +13645,7 @@
     "InvalidEnvironmentForReceipt",
     "EncryptedRequestNotAllowed",
     "SignedRequestNotAllowed",
-    "RequestViewConstraintParamsNotAllowed"
+    "RequestViewConstraintParamsNotAllowed",
+    "BadPartnerConfiguration"
   ]
 }

@@ -4692,6 +4692,49 @@
         }
       ]
     },
+    "GetPaymentTokenRequest": {
+      "name": "GetPaymentTokenRequest",
+      "className": "GetPaymentTokenRequest",
+      "classNameSpace": "PlayFab.Client.Models",
+      "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "properties": [
+        {
+          "name": "TokenProvider",
+          "description": "The name of service to provide the payment token. Allowed Values are: xsolla",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": false
+        }
+      ]
+    },
+    "GetPaymentTokenResult": {
+      "name": "GetPaymentTokenResult",
+      "className": "GetPaymentTokenResult",
+      "classNameSpace": "PlayFab.Client.Models",
+      "assembly": "PlayFab.Client.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "properties": [
+        {
+          "name": "ProviderToken",
+          "description": "The token from provider.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "OrderId",
+          "description": "PlayFab's purchase order identifier.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        }
+      ]
+    },
     "GetPhotonAuthenticationTokenRequest": {
       "name": "GetPhotonAuthenticationTokenRequest",
       "className": "GetPhotonAuthenticationTokenRequest",
@@ -16547,6 +16590,28 @@
         "MissingAmazonSharedKey",
         "NoMatchingCatalogItemForReceipt"
       ]
+    },
+    {
+      "name": "GetPaymentToken",
+      "summary": "For payments flows where the provider requires playfab (the fulfiller) to initiate the transaction, but the client completes the rest of the flow. In the Xsolla case, the token returned here will be passed to Xsolla by the client to create a cart. Poll GetPurchase using the returned OrderId once you've completed the payment.",
+      "subgroup": "Xsolla-specific APIs",
+      "titleTiers": null,
+      "url": "/Client/GetPaymentToken",
+      "auth": "SessionTicket",
+      "method": "POST",
+      "request": "GetPaymentTokenRequest",
+      "requestExample": "{\r\n  \"TokenProvider\": \"xsolla\"\r\n}",
+      "result": "GetPaymentTokenResult",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"ProviderToken\": \"uV0iCEvWkUGVqWerTgbrndWePOMiLAfO\",\r\n    \"OrderId\": \"8853591446005860822\"\r\n  }\r\n}",
+      "AllInclusiveFlags": [
+        "Beta"
+      ],
+      "seeAlso": [
+        "Client/GetPurchase"
+      ],
+      "errors": [
+        "InvalidPaymentProvider"
+      ]
     }
   ],
   "subgroups": [
@@ -16832,6 +16897,12 @@
       "name": "Windows",
       "methods": [
         "ValidateWindowsStoreReceipt"
+      ]
+    },
+    {
+      "name": "Xsolla-specific APIs",
+      "methods": [
+        "GetPaymentToken"
       ]
     }
   ],
@@ -18007,6 +18078,10 @@
     "RequestViewConstraintParamsNotAllowed": {
       "id": 1303,
       "name": "RequestViewConstraintParamsNotAllowed"
+    },
+    "BadPartnerConfiguration": {
+      "id": 1304,
+      "name": "BadPartnerConfiguration"
     }
   },
   "errorList": [
@@ -18302,6 +18377,7 @@
     "InvalidEnvironmentForReceipt",
     "EncryptedRequestNotAllowed",
     "SignedRequestNotAllowed",
-    "RequestViewConstraintParamsNotAllowed"
+    "RequestViewConstraintParamsNotAllowed",
+    "BadPartnerConfiguration"
   ]
 }
