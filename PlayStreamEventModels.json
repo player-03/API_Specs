@@ -2523,14 +2523,14 @@
             },
             {
               "name": "ServerHost",
-              "description": "Host name of the machine running the custom game server.",
+              "description": "Publicly visible domain name or IP address of the host running the custom game server.",
               "jsontype": "String",
               "actualtype": "String",
               "optional": true
             },
             {
               "name": "ServerPort",
-              "description": "Network port assigned to the custom game server.",
+              "description": "Network port of the host assigned to the custom game server.",
               "jsontype": "Number",
               "actualtype": "uint32",
               "optional": false
@@ -2617,14 +2617,14 @@
             },
             {
               "name": "ServerHost",
-              "description": "Host name of the machine running the custom game server.",
+              "description": "Publicly visible domain name or IP address of the host running the custom game server.",
               "jsontype": "String",
               "actualtype": "String",
               "optional": true
             },
             {
               "name": "ServerPort",
-              "description": "Network port assigned to the custom game server.",
+              "description": "Network port of the host assigned to the custom game server.",
               "jsontype": "Number",
               "actualtype": "uint32",
               "optional": false
@@ -2640,6 +2640,151 @@
               "name": "Tags",
               "description": "Custom tags associated with the game lobby.",
               "collection": "map",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "gameserverhost_started",
+          "className": "GameServerHostStartedEventData",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a multiplayer game lobby starts.",
+          "properties": [
+            {
+              "name": "StartTime",
+              "description": "Time that the host was started.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": false
+            },
+            {
+              "name": "TitleId",
+              "description": "The ID of the title associated with this host",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "Region",
+              "description": "Region in which the host is running.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "ServerBuildVersion",
+              "description": "Build version of the custom game server installed on the host.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "ServerHost",
+              "description": "Publicly visible domain name or IP address of the host.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "InstanceId",
+              "description": "Unique identifier of the host.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "InstanceProvider",
+              "description": "Server hosting provider of host machine or VM.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "InstanceType",
+              "description": "Provider specific type of the host machine or VM.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            }
+          ]
+        },
+        {
+          "name": "gameserverhost_stopped",
+          "className": "GameServerHostStoppedEventData",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when a multiplayer game lobby stops.",
+          "properties": [
+            {
+              "name": "StartTime",
+              "description": "Time that the host was started.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": false
+            },
+            {
+              "name": "StopTime",
+              "description": "Time that the host was stopped.",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": false
+            },
+            {
+              "name": "StopReason",
+              "description": "Reason that the host was stopped.",
+              "jsontype": "String",
+              "actualtype": "GameServerHostStopReason",
+              "isenum": true,
+              "optional": true
+            },
+            {
+              "name": "TitleId",
+              "description": "The ID of the title associated with this host",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "Region",
+              "description": "Region in which the host is running.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "ServerBuildVersion",
+              "description": "Build version of the custom game server installed on the host.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "ServerHost",
+              "description": "Publicly visible domain name or IP address of the host.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "InstanceId",
+              "description": "Unique identifier of the host.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "InstanceProvider",
+              "description": "Server hosting provider of host machine or VM.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "InstanceType",
+              "description": "Provider specific type of the host machine or VM.",
               "jsontype": "String",
               "actualtype": "String",
               "optional": true
@@ -4696,6 +4841,27 @@
           "jsontype": "Number",
           "actualtype": "double",
           "optional": true
+        }
+      ]
+    },
+    {
+      "name": "GameServerHostStopReason",
+      "className": "GameServerHostStopReason",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "isenum": true,
+      "enumvalues": [
+        {
+          "name": "Other"
+        },
+        {
+          "name": "ExcessCapacity"
+        },
+        {
+          "name": "LimitExceeded"
+        },
+        {
+          "name": "BuildNotActiveInRegion"
         }
       ]
     },
