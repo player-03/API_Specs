@@ -9815,10 +9815,16 @@
       "properties": [
         {
           "name": "Updated",
-          "description": "Indicates whether this action completed successfully.",
+          "description": "Deprecated: Always true",
+          "deprecation": {
+            "ProposedAfter": "5/22/2017",
+            "DeprecatedAfter": "7/22/2017",
+            "ObsoleteAfter": "8/22/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Boolean",
           "actualtype": "Boolean",
-          "optional": false
+          "optional": true
         },
         {
           "name": "SubmissionsRemaining",
@@ -10628,7 +10634,7 @@
           },
           "jsontype": "Number",
           "actualtype": "uint64",
-          "optional": false
+          "optional": true
         },
         {
           "name": "SteamStringId",
@@ -13471,7 +13477,7 @@
       "request": "GetPlayFabIDsFromSteamIDsRequest",
       "requestExample": "{\r\n  \"SteamStringIDs\": [\r\n    \"857498576495\",\r\n    \"759374651209\"\r\n  ]\r\n}",
       "result": "GetPlayFabIDsFromSteamIDsResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": [\r\n      {\r\n        \"SteamId\": 857498576495,\r\n        \"SteamStringId\": \"857498576495\",\r\n        \"PlayFabId\": \"5a446c83645201\"\r\n      },\r\n      {\r\n        \"SteamId\": 759374651209,\r\n        \"SteamStringId\": \"759374651209\",\r\n        \"PlayFabId\": \"6345cd25a6c7cc\"\r\n      }\r\n    ]\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": [\r\n      {\r\n        \"SteamStringId\": \"857498576495\",\r\n        \"PlayFabId\": \"5a446c83645201\"\r\n      },\r\n      {\r\n        \"SteamStringId\": \"759374651209\",\r\n        \"PlayFabId\": \"6345cd25a6c7cc\"\r\n      }\r\n    ]\r\n  }\r\n}",
       "errors": [
         "AccountNotFound"
       ]
@@ -13844,7 +13850,7 @@
       "request": "ReportPlayerClientRequest",
       "requestExample": "{\r\n  \"ReporteeId\": \"1a46086aed40f142\",\r\n  \"Comment\": \"cheating\"\r\n}",
       "result": "ReportPlayerClientResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Updated\": true,\r\n    \"SubmissionsRemaining\": 2\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"SubmissionsRemaining\": 2\r\n  }\r\n}",
       "errors": [
         "InvalidParams",
         "OverLimit"
