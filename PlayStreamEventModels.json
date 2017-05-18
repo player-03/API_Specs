@@ -2037,7 +2037,7 @@
           "className": "PlayerRedeemedCouponEventData",
           "classNameSpace": "PlayFab.PlayStreamEvent.Models",
           "assembly": "PlayFab.PlayStreamEvent.Models",
-          "description": "This event is triggered when a player makes a real money purchase, and generates revenue for the game.",
+          "description": "This event is triggered when a player redeems a coupon.",
           "properties": [
             {
               "name": "CouponCode",
