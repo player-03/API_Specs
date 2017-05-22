@@ -2126,6 +2126,37 @@
           ]
         },
         {
+          "name": "player_set_profile_property",
+          "className": "PlayerSetProfilePropertyEventData",
+          "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+          "assembly": "PlayFab.PlayStreamEvent.Models",
+          "description": "This event is triggered when PlayFab makes an internal adjustment to a player profile.",
+          "properties": [
+            {
+              "name": "Property",
+              "description": "Property of the profile to be set",
+              "jsontype": "String",
+              "actualtype": "PlayerProfileProperty",
+              "isenum": true,
+              "optional": true
+            },
+            {
+              "name": "Value",
+              "description": "Value to set to",
+              "jsontype": "Object",
+              "actualtype": "object",
+              "optional": true
+            },
+            {
+              "name": "TitleId",
+              "description": "The ID of the title to which this player event applies.",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            }
+          ]
+        },
+        {
           "name": "player_statistic_changed",
           "className": "PlayerStatisticChangedEventData",
           "classNameSpace": "PlayFab.PlayStreamEvent.Models",
@@ -3998,6 +4029,21 @@
     }
   ],
   "ChildTypes": [
+    {
+      "name": "PlayerProfileProperty",
+      "className": "PlayerProfileProperty",
+      "classNameSpace": "PlayFab.PlayStreamEvent.Models",
+      "assembly": "PlayFab.PlayStreamEvent.Models",
+      "isenum": true,
+      "enumvalues": [
+        {
+          "name": "TotalValueToDateInUSD"
+        },
+        {
+          "name": "PlayerValuesToDate"
+        }
+      ]
+    },
     {
       "name": "AuthenticationProvider",
       "className": "AuthenticationProvider",
