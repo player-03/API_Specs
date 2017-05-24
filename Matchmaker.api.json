@@ -1891,6 +1891,14 @@
     "BadPartnerConfiguration": {
       "id": 1304,
       "name": "BadPartnerConfiguration"
+    },
+    "XboxBPCertificateFailure": {
+      "id": 1305,
+      "name": "XboxBPCertificateFailure"
+    },
+    "XboxXASSExchangeFailure": {
+      "id": 1306,
+      "name": "XboxXASSExchangeFailure"
     }
   },
   "errorList": [
@@ -2187,6 +2195,8 @@
     "EncryptedRequestNotAllowed",
     "SignedRequestNotAllowed",
     "RequestViewConstraintParamsNotAllowed",
-    "BadPartnerConfiguration"
+    "BadPartnerConfiguration",
+    "XboxBPCertificateFailure",
+    "XboxXASSExchangeFailure"
   ]
 }
