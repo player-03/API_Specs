@@ -5052,9 +5052,6 @@
       "className": "GetPlayerProfileRequest",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
       "properties": [
         {
           "name": "PlayFabId",
@@ -5078,9 +5075,6 @@
       "className": "GetPlayerProfileResult",
       "classNameSpace": "PlayFab.Client.Models",
       "assembly": "PlayFab.Client.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
       "properties": [
         {
           "name": "PlayerProfile",
@@ -13385,9 +13379,6 @@
       "requestExample": "{\r\n  \"PlayFabId\": \"621EF20237534A44\"\r\n}",
       "result": "GetPlayerProfileResult",
       "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayerProfile\": {\r\n      \"TitleId\": \"TitleName\",\r\n      \"PlayerId\": \"10931252888739651331\",\r\n      \"Created\": \"0001-01-01T00:00:00Z\",\r\n      \"LastLogin\": \"0001-01-01T00:00:00Z\",\r\n      \"BannedUntil\": \"9999-12-31T23:59:59.999Z\",\r\n      \"DisplayName\": \"PlayerDisplayName\",\r\n      \"TotalValueToDateInUSD\": 0\r\n    }\r\n  }\r\n}",
-      "AllInclusiveFlags": [
-        "Beta"
-      ],
       "errors": [
         "PlayerNotInGame",
         "ProfileDoesNotExist",
