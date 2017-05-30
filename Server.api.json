@@ -10871,7 +10871,7 @@
     {
       "name": "DeregisterGame",
       "summary": "Inform the matchmaker that a Game Server Instance is removed.",
-      "subgroup": "Matchmaking APIs",
+      "subgroup": "Matchmaking",
       "titleTiers": null,
       "url": "/Server/DeregisterGame",
       "auth": "SecretKey",
@@ -10890,7 +10890,7 @@
     {
       "name": "NotifyMatchmakerPlayerLeft",
       "summary": "Informs the PlayFab match-making service that the user specified has left the Game Server Instance",
-      "subgroup": "Matchmaking APIs",
+      "subgroup": "Matchmaking",
       "titleTiers": null,
       "url": "/Server/NotifyMatchmakerPlayerLeft",
       "auth": "SecretKey",
@@ -10908,7 +10908,7 @@
       "name": "RedeemMatchmakerTicket",
       "summary": "Validates a Game Server session ticket and returns details about the user",
       "requestDetails": "This function is used by a Game Server Instance to validate with the PlayFab service that a user has been registered as connected to the server. The Ticket is provided to the client either as a result of a call to StartGame or Matchmake, each of which return a Ticket specific to the Game Server Instance. This function will fail in any case where the Ticket presented is not valid for the specific Game Server Instance making the call. Note that data returned may be Personally Identifying Information (PII), such as email address, and so care should be taken in how this data is stored and managed. Since this call will always return the relevant information for users who have accessed the title, the recommendation is to not store this data locally.",
-      "subgroup": "Matchmaking APIs",
+      "subgroup": "Matchmaking",
       "titleTiers": null,
       "url": "/Server/RedeemMatchmakerTicket",
       "auth": "SecretKey",
@@ -10928,7 +10928,7 @@
     {
       "name": "RefreshGameServerInstanceHeartbeat",
       "summary": "Set the state of the indicated Game Server Instance. Also update the heartbeat for the instance.",
-      "subgroup": "Matchmaking APIs",
+      "subgroup": "Matchmaking",
       "titleTiers": null,
       "url": "/Server/RefreshGameServerInstanceHeartbeat",
       "auth": "SecretKey",
@@ -10945,7 +10945,7 @@
     {
       "name": "RegisterGame",
       "summary": "Inform the matchmaker that a new Game Server Instance is added.",
-      "subgroup": "Matchmaking APIs",
+      "subgroup": "Matchmaking",
       "titleTiers": null,
       "url": "/Server/RegisterGame",
       "auth": "SecretKey",
@@ -10965,7 +10965,7 @@
     {
       "name": "SetGameServerInstanceData",
       "summary": "Sets the custom data of the indicated Game Server Instance",
-      "subgroup": "Matchmaking APIs",
+      "subgroup": "Matchmaking",
       "titleTiers": null,
       "url": "/Server/SetGameServerInstanceData",
       "auth": "SecretKey",
@@ -10982,7 +10982,7 @@
     {
       "name": "SetGameServerInstanceState",
       "summary": "Set the state of the indicated Game Server Instance.",
-      "subgroup": "Matchmaking APIs",
+      "subgroup": "Matchmaking",
       "titleTiers": null,
       "url": "/Server/SetGameServerInstanceState",
       "auth": "SecretKey",
@@ -10999,7 +10999,7 @@
     {
       "name": "SetGameServerInstanceTags",
       "summary": "Set custom tags for the specified Game Server Instance",
-      "subgroup": "Matchmaking APIs",
+      "subgroup": "Matchmaking",
       "titleTiers": null,
       "url": "/Server/SetGameServerInstanceTags",
       "auth": "SecretKey",
@@ -11011,22 +11011,6 @@
       "errors": [
         "InvalidParams",
         "GameNotFound"
-      ]
-    },
-    {
-      "name": "AwardSteamAchievement",
-      "summary": "Awards the specified users the specified Steam achievements",
-      "subgroup": "Steam-Specific APIs",
-      "titleTiers": null,
-      "url": "/Server/AwardSteamAchievement",
-      "auth": "SecretKey",
-      "method": "POST",
-      "request": "AwardSteamAchievementRequest",
-      "requestExample": "{\r\n  \"Achievements\": [\r\n    {\r\n      \"PlayFabId\": \"234974573892\",\r\n      \"AchievementName\": \"FinishLevel1\",\r\n      \"Result\": false\r\n    },\r\n    {\r\n      \"PlayFabId\": \"334353433\",\r\n      \"AchievementName\": \"FinishLevel1\",\r\n      \"Result\": false\r\n    }\r\n  ]\r\n}",
-      "result": "AwardSteamAchievementResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"AchievementResults\": [\r\n      {\r\n        \"PlayFabId\": \"234974573892\",\r\n        \"AchievementName\": \"FinishLevel1\",\r\n        \"Result\": true\r\n      },\r\n      {\r\n        \"PlayFabId\": \"334353433\",\r\n        \"AchievementName\": \"FinishLevel1\",\r\n        \"Result\": true\r\n      }\r\n    ]\r\n  }\r\n}",
-      "errors": [
-        "InvalidParams"
       ]
     },
     {
@@ -11986,6 +11970,22 @@
         "SegmentNotFound",
         "ActionGroupNotFound"
       ]
+    },
+    {
+      "name": "AwardSteamAchievement",
+      "summary": "Awards the specified users the specified Steam achievements",
+      "subgroup": "Platform Specific Methods",
+      "titleTiers": null,
+      "url": "/Server/AwardSteamAchievement",
+      "auth": "SecretKey",
+      "method": "POST",
+      "request": "AwardSteamAchievementRequest",
+      "requestExample": "{\r\n  \"Achievements\": [\r\n    {\r\n      \"PlayFabId\": \"234974573892\",\r\n      \"AchievementName\": \"FinishLevel1\",\r\n      \"Result\": false\r\n    },\r\n    {\r\n      \"PlayFabId\": \"334353433\",\r\n      \"AchievementName\": \"FinishLevel1\",\r\n      \"Result\": false\r\n    }\r\n  ]\r\n}",
+      "result": "AwardSteamAchievementResult",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"AchievementResults\": [\r\n      {\r\n        \"PlayFabId\": \"234974573892\",\r\n        \"AchievementName\": \"FinishLevel1\",\r\n        \"Result\": true\r\n      },\r\n      {\r\n        \"PlayFabId\": \"334353433\",\r\n        \"AchievementName\": \"FinishLevel1\",\r\n        \"Result\": true\r\n      }\r\n    ]\r\n  }\r\n}",
+      "errors": [
+        "InvalidParams"
+      ]
     }
   ],
   "subgroups": [
@@ -12090,7 +12090,7 @@
       ]
     },
     {
-      "name": "Matchmaking APIs",
+      "name": "Matchmaking",
       "methods": [
         "DeregisterGame",
         "NotifyMatchmakerPlayerLeft",
@@ -12100,12 +12100,6 @@
         "SetGameServerInstanceData",
         "SetGameServerInstanceState",
         "SetGameServerInstanceTags"
-      ]
-    },
-    {
-      "name": "Steam-Specific APIs",
-      "methods": [
-        "AwardSteamAchievement"
       ]
     },
     {
@@ -12192,6 +12186,12 @@
         "GetPlayerTags",
         "RemovePlayerTag",
         "RunActionsOnPlayersInSegment"
+      ]
+    },
+    {
+      "name": "Platform Specific Methods",
+      "methods": [
+        "AwardSteamAchievement"
       ]
     }
   ],
