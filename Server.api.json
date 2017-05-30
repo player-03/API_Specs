@@ -3245,7 +3245,7 @@
         },
         {
           "name": "ProfileConstraints",
-          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. On client, only ShowDisplayName, ShowStatistics, ShowAvatarUrl are allowed.",
+          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. For API calls from the client, only ShowDisplayName, ShowAvatarUrl are allowed at this time.",
           "jsontype": "Object",
           "actualtype": "PlayerProfileViewConstraints",
           "isclass": true,
@@ -3503,7 +3503,7 @@
         },
         {
           "name": "ProfileConstraints",
-          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. On client, only ShowDisplayName, ShowStatistics, ShowAvatarUrl are allowed.",
+          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. For API calls from the client, only ShowDisplayName, ShowAvatarUrl are allowed at this time.",
           "jsontype": "Object",
           "actualtype": "PlayerProfileViewConstraints",
           "isclass": true,
@@ -3631,7 +3631,7 @@
         },
         {
           "name": "ProfileConstraints",
-          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. On client, only ShowDisplayName, ShowStatistics, ShowAvatarUrl are allowed.",
+          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. For API calls from the client, only ShowDisplayName, ShowAvatarUrl are allowed at this time.",
           "jsontype": "Object",
           "actualtype": "PlayerProfileViewConstraints",
           "isclass": true,
@@ -3981,7 +3981,7 @@
         },
         {
           "name": "ProfileConstraints",
-          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. On client, only ShowDisplayName, ShowStatistics, ShowAvatarUrl are allowed.",
+          "description": "If non-null, this determines which properties of the profile to return. If null, playfab will only include display names. For API calls from the client, only ShowDisplayName, ShowAvatarUrl are allowed at this time.",
           "jsontype": "Object",
           "actualtype": "PlayerProfileViewConstraints",
           "isclass": true,
@@ -6261,14 +6261,14 @@
         },
         {
           "name": "TitleId",
-          "description": "Title ID this profile applies to",
+          "description": "Title ID this player profile applies to",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "PlayerId",
-          "description": "PlayFab Player ID",
+          "description": "PlayFab player account unique identifier",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -6290,7 +6290,7 @@
         },
         {
           "name": "LastLogin",
-          "description": "Last login",
+          "description": "UTC time when the player most recently logged in to the title",
           "jsontype": "String",
           "actualtype": "DateTime",
           "optional": true
@@ -6304,7 +6304,7 @@
         },
         {
           "name": "Locations",
-          "description": "List of geographic locations where the player has logged-in",
+          "description": "List of geographic locations from which the player has logged in to the title",
           "collection": "array",
           "jsontype": "Object",
           "actualtype": "LocationModel",
@@ -6313,14 +6313,14 @@
         },
         {
           "name": "DisplayName",
-          "description": "Player Display Name",
+          "description": "Player display name",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
         },
         {
           "name": "AvatarUrl",
-          "description": "Image URL of the player's avatar",
+          "description": "URL of the player's avatar image",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
@@ -6345,7 +6345,7 @@
         },
         {
           "name": "LinkedAccounts",
-          "description": "List of third party accounts linked to this player",
+          "description": "List of all authentication systems linked to this player account",
           "collection": "array",
           "jsontype": "Object",
           "actualtype": "LinkedPlatformAccountModel",
@@ -6363,14 +6363,21 @@
         },
         {
           "name": "TotalValueToDateInUSD",
-          "description": "A sum of player's total purchases across all real-money currencies, converted to US Dollars equivalent",
+          "description": "Sum of the player's purchases made with real-money currencies, converted to US dollars equivalent and represented as a whole number of cents (1/100 USD).              For example, 999 indicates nine dollars and ninety-nine cents.",
           "jsontype": "Number",
           "actualtype": "uint32",
           "optional": true
         },
         {
+          "name": "TotalValueToDateInUSDAsDecimal",
+          "description": "String representation of TotalValueToDateInUSD in decimal monetary units. For example, '9.99' indicates nine dollars and ninety-nine cents.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
           "name": "ValuesToDate",
-          "description": "List of player's total lifetime real-money purchases by currency",
+          "description": "List of the player's lifetime purchase totals, summed by real-money currency",
           "collection": "array",
           "jsontype": "Object",
           "actualtype": "ValueToDateModel",
@@ -6379,7 +6386,7 @@
         },
         {
           "name": "VirtualCurrencyBalances",
-          "description": "List of player's virtual currency balances",
+          "description": "List of the player's virtual currency balances",
           "collection": "array",
           "jsontype": "Object",
           "actualtype": "VirtualCurrencyBalanceModel",
@@ -9139,14 +9146,14 @@
         },
         {
           "name": "TotalValue",
-          "description": "Total value of the purchases in a whole number of 1/100 monetary units. For example 999 indicates nine dollars and ninety-nine cents when Currency is 'USD')",
+          "description": "Total value of the purchases in a whole number of 1/100 monetary units. For example, 999 indicates nine dollars and ninety-nine cents when Currency is 'USD')",
           "jsontype": "Number",
           "actualtype": "uint32",
           "optional": false
         },
         {
           "name": "TotalValueAsDecimal",
-          "description": "Total value of the purchases in a string representation of decimal monetary units (e.g. '9.99' indicates nine dollars and ninety-nine cents when Currency is 'USD'))",
+          "description": "Total value of the purchases in a string representation of decimal monetary units. For example, '9.99' indicates nine dollars and ninety-nine cents when Currency is 'USD'.",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true
