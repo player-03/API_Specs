@@ -14941,7 +14941,8 @@
         "InvalidParams",
         "CouponCodeNotFound",
         "CouponAlreadyRedeemed",
-        "CharacterNotFound"
+        "CharacterNotFound",
+        "InvalidTitleId"
       ]
     },
     {
