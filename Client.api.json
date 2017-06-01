@@ -6382,7 +6382,7 @@
         },
         {
           "name": "CharacterName",
-          "description": "Non-unique display name of the character being granted.",
+          "description": "Non-unique display name of the character being granted (1-20 characters in length).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": false
@@ -9510,7 +9510,7 @@
         },
         {
           "name": "DisplayName",
-          "description": "An optional parameter for setting the display name for this title.",
+          "description": "An optional parameter for setting the display name for this title (3-25 characters).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": true

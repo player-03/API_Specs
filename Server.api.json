@@ -4805,7 +4805,7 @@
         },
         {
           "name": "CharacterName",
-          "description": "Non-unique display name of the character being granted.",
+          "description": "Non-unique display name of the character being granted (1-20 characters in length).",
           "jsontype": "String",
           "actualtype": "String",
           "optional": false
